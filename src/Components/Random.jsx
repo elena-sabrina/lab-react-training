@@ -6,7 +6,7 @@ const Random = ({ max }) => {
   return (
     <div>
       <h3>
-        Random value between 1 and {max} => {random}
+        Random value between 1 and {max} = {random}
       </h3>
     </div>
   );
