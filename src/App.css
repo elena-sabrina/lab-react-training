@@ -12,3 +12,22 @@ li {
 img {
   margin: 10px;
 }
+
+.credicard-image {
+  height: auto;
+  width: 50px;
+}
+
+.creditCard {
+  width: 400px;
+  padding: 20px;
+  margin: 100px;
+}
+
+.creditCardlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: red;
+  padding: 10px;
+}
