@@ -7,6 +7,13 @@ class DriverCard extends React.Component {
       <div>
         <h3>{name}</h3>
         <img className="credicard-image" src={img} alt={name} />
+        <p>
+          {car.model} - {car.licensePlate}
+        </p>
+        <p>
+          {'★'.repeat(Math.round(rating))}
+          {'☆'.repeat(5 - Math.round(rating))}
+        </p>
       </div>
     );
   }
