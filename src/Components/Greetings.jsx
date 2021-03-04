@@ -22,4 +22,13 @@ const Greetings = ({ lang, children }) => {
   );
 };
 
-export default Greetings;
+function App() {
+  return (
+    <div>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
+    </div>
+  );
+}
+
+export default App;

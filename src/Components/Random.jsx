@@ -12,4 +12,13 @@ const Random = ({ max }) => {
   );
 };
 
-export default Random;
+function App() {
+  return (
+    <div>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+    </div>
+  );
+}
+
+export default App;
