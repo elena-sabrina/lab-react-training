@@ -23,19 +23,24 @@ class LikeButton extends React.Component {
     this.setState({ index: this.state.index + 1 });
   };
 
+  colorAndcount = () => {
+    this.incrementCount();
+    this.changeColorindex();
+  };
+
   render() {
     return (
       <div>
         <button
-          style={{ backgroundColor: `rgb(178,34,34)` }}
-          onClick={this.incrementCount}
+          style={{
+            backgroundColor: this.state.colors[
+              this.state.index % this.state.colors.length
+            ],
+          }}
+          onClick={this.colorAndcount}
         >
           {this.state.count} Likes{' '}
         </button>
-
-        <button onClick={this.changeColorindex}>click</button>
-        <p>{this.state.colors[0]}</p>
-        <p>{this.state.index}</p>
       </div>
     );
   }
